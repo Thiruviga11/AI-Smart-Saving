@@ -1,0 +1,190 @@
+.home-container {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding-bottom: 20px;
+}
+
+.home-header {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  padding: 20px 20px 60px 20px;
+  border-radius: 0 0 32px 32px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h2 {
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.wallet-card {
+  background: white;
+  margin: -40px 20px 20px 20px;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.wallet-balance {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.balance-label {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.balance-amount {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.spending-progress {
+  margin-top: 20px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.progress-percentage {
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.action-btn svg {
+  font-size: 28px;
+}
+
+.action-btn.primary {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.action-btn.secondary {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+}
+
+.info-icon.blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.info-icon.purple {
+  background: linear-gradient(135deg, #a78b
