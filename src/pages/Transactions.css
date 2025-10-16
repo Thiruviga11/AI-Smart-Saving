@@ -1,0 +1,250 @@
+.transaction-container {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.transaction-header {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.transaction-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.transaction-content {
+  padding: 32px 20px;
+}
+
+.amount-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 32px;
+  font-size: 36px;
+  color: white;
+}
+
+.amount-icon.purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.amount-icon.blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.balance-display {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.balance-display p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.balance-display h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.amount-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 4px 20px;
+  transition: all 0.3s;
+}
+
+.amount-input-wrapper:focus-within {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+.currency-symbol {
+  font-size: 28px;
+  font-weight: 700;
+  color: #64748b;
+  margin-right: 8px;
+}
+
+.amount-input {
+  flex: 1;
+  border: none;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  outline: none;
+  background: transparent;
+}
+
+.amount-input::placeholder {
+  color: #cbd5e1;
+}
+
+.text-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s;
+  background: white;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+.quick-amounts {
+  margin-top: 8px;
+}
+
+.quick-label {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.quick-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.quick-btn {
+  padding: 12px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b82f6;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.quick-btn:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.info-text {
+  background: #eff6ff;
+  padding: 16px;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+.info-text p {
+  font-size: 13px;
+  color: #1e40af;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.warning-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fef3c7;
+  padding: 16px;
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+}
+
+.warning-box svg {
+  color: #d97706;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.warning-box p {
+  font-size: 13px;
+  color: #92400e;
+  margin: 0;
+  font-weight: 500;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 12px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.submit-btn.purple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.submit-btn.purple:hover:not(:disabled) {
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+}
+
+.submit-btn.blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.submit-btn.blue:hover:not(:disabled) {
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
